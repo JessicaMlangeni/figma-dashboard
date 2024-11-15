@@ -1,0 +1,16 @@
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds spacing between the charts */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .chart-wrapper {
+    flex: 1;
+    min-width: 45%; /* Ensures each chart takes about half the width */
+  }
+  
+  

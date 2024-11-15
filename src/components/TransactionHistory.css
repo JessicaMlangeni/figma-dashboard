@@ -1,0 +1,9 @@
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .transaction-table th, .transaction-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
