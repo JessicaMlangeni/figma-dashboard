@@ -4,8 +4,11 @@ import "./LandingPage.css";
 import facebookLogo from "./images/akar-icons_facebook-fill.png";
 import googleLogo from "./images/google.png";
 import logo from "./images/logo.png";
-import board from "./images/board.png" 
+import group from "./images/group.png" 
 
+const mockUsers = [
+  { email: "user@example.com", password: "password123" },
+];
 function LandingPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -28,7 +31,7 @@ function LandingPage() {
           <img src={logo} alt="" className="mydash max-w-xs h-auto" />
         </div>
         <div className="group">
-        <img src={board} alt=""  className="center"/>
+        <img src={group} alt=""  className="center"/>
         </div>
         <br />
         <p className="welcome-text text-xl font-semibold">Welcome to your Dashboard</p>
