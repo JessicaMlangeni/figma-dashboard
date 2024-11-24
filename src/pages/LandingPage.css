@@ -162,3 +162,9 @@ justify-content: center;
   margin-top: 1rem;
   font-size: 0.9rem;
 }
+
+@media screen and (min-width :375px){
+ .container-fluid{
+  display: flex;
+ } 
+}
