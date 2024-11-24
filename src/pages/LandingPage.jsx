@@ -6,8 +6,8 @@ import googleLogo from "./images/google.png";
 import logo from "./images/logo.png";
 import group from "./images/group.png" 
 
-const mockUsers = [
-  { email: "user@example.com", password: "password123" },
+const User = [
+  { email: "melsoft@academy.co.za", password: "Melsoft2024" },
 ];
 function LandingPage() {
   const [email, setEmail] = useState('');
@@ -16,7 +16,7 @@ function LandingPage() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    const user = mockUsers.find(user => user.email === email && user.password === password);
+    const user = User.find(user => user.email === email && user.password === password);
     if (user) {
       setError('');
     } else {
@@ -34,8 +34,8 @@ function LandingPage() {
         <img src={group} alt=""  className="center"/>
         </div>
         <br />
-        <p className="welcome-text text-xl font-semibold">Welcome to your Dashboard</p>
-        <p className="subtext text-lg">Everything you need to manage your online store</p>
+        <p className="heading">Welcome to your Dashboard</p>
+        <p className="sub">Everything you need to manage your online store</p>
       </div>
 
       <div className="right-section flex flex-column justify-center align-items-center p-8 bg-white">
@@ -67,6 +67,8 @@ function LandingPage() {
           </div>
           <button type="submit" className="sign-in-btn bg-blue-500 text-white py-2 rounded-lg">Sign In</button>
         </form>
+        <p>Or Sign In Using</p>
+
         <div className="social-login text-center mt-6 mb-4">
           <button className="social-btn google bg-gray-100 border border-gray-300 rounded-lg flex items-center justify-center py-2 mt-2">
             <img src={googleLogo} alt="google logo" className="google-logo " />
