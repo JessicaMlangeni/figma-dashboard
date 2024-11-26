@@ -1,0 +1,87 @@
+/* src/App.css */
+
+.app {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+
+.dashboard {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-lower {
+  display: flex;
+  gap: 20px;
+}
+
+/* General styles for the dashboard */
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.section {
+  flex: 1 1 calc(50% - 16px); /* Two columns layout */
+  box-sizing: border-box;
+}
+
+/* Graph sections span full width by default */
+.graph-section {
+  flex: 1 1 100%;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 1024px) {
+  .section {
+    flex: 1 1 calc(100% - 16px); 
+  }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column; 
+    padding: 8px;
+  }
+
+  .section {
+    width: 100%; 
+  }
+
+  .graph-section {
+    margin-bottom: 16px; 
+  }
+
+  /* Adjust table styles inside sections */
+  .section table {
+    width: 100%;
+    overflow-x: auto; 
+    display: block;
+  }
+
+  .section table th,
+  .section table td {
+    font-size: 12px;
+  }
+
+  /* Prevent content overflow */
+  body {
+    overflow-x: hidden;
+  }
+}
+
