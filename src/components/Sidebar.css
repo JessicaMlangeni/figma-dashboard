@@ -1,28 +1,142 @@
+/* Sidebar Container */
 .sidebar {
+  width: 250px;
+  height: 141vh;
+  background-color: #ffffff; /* White block for sidebar */
+  border-right: 1px solid #eaeaea; /* Subtle border to define the block */
   display: flex;
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center; 
-  width: 200px; 
-  background-color:white;
-  color: black;
-  padding: 15px;
-  height: 100%; 
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for a floating block effect */
 }
 
-.sidebar ul {
+/* Sidebar Header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eaeaea; /* Separate header with a border */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 1.5rem;
+  color: #007bff; /* Accent color */
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+  flex-grow: 1;
+  padding: 20px 0;
+}
+
+.sidebar-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 35px; /* Spacing between icon and text */
+  color: #555;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  margin-bottom: 10px; /* Increase spacing between menu items */
+}
 
-.sidebar li {
-  padding: 50px 0; 
-  text-align: center; 
+.menu-item:last-child {
+  margin-bottom: 0; /* Remove margin for the last menu item */
 }
 
 
-.sidebar li:hover {
-  background-color: grey; 
-  cursor: pointer; 
+.menu-item.active {
+  background-color: #eaf4ff; /* Highlight active item */
+  color: #007bff; /* Accent color */
 }
+
+.menu-item:hover {
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+.menu-icon {
+  font-size: 1.2rem;
+  color: inherit; /* Matches the active or hover color */
+}
+
+.text {
+  flex-grow: 1;
+  font-size: 0.95rem;
+}
+
+/* Badge for Notifications */
+.badge {
+  background-color: #ff5c5c;
+  color: white;
+  font-size: 0.8rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+/* Ensure content outside the sidebar looks distinct */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafc; /* Subtle background for main content */
+  display: flex;
+}
+
+/* Sidebar.css */
+
+/* Sidebar Header */
+.sidebar-header .logo {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-family: 'Arial', sans-serif; /* Choose any font family you like */
+}
+
+/* Sidebar.css */
+
+/* Sidebar Header */
+.sidebar-header .logo {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-family: 'Arial', sans-serif; /* Choose any font family you like */
+}
+
+/* Styling the lightning icon inside a blue square block */
+.sidebar-header .logo-icon {
+  font-size: 32px;
+  color: #ffffff; /* Set the icon color to white */
+  background-color: #007BFF; /* Blue background for the square block */
+  padding: 10px; /* Padding inside the square block */
+  border-radius: 8px; /* Rounded corners */
+  margin-right: 10px; /* Space between icon and text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling the logo text */
+.sidebar-header .logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Text color */
+  letter-spacing: 1px; /* Adjust letter spacing for better readability */
+}
+
