@@ -1,20 +1,107 @@
-.kpi-container {
-    display: flex;
-    gap: 20px;
-  }
-  .kpi-card {
-    background-color: #cf151563;
-   margin-top: 15px;
-   margin-bottom: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 20px;
-  }
-  .kpi-trend.up {
-    color: green;
-  }
-  .kpi-trend.down {
-    color: red;
-  }
+.kpi-cards-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.kpi-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 220px;
+}
+
+.icon-wrapper {
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Ad Spend Icon Styling */
+.ad-spent-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #38bdf8; /* Circle border */
+  border-radius: 50%; /* Circular shape */
+  color: #38bdf8; /* Dollar sign color */
+  font-size: 18px;
+}
+
+.total-revenue-icon{
+  color:#2563EB ;
+  border: "2px solid #2563EB";
+  border-radius: "50%";
+  width: "40px";
+  height: "40px";
+  display: "flex";
+  align-items: "center";
+  justify-content: center;
   
+}
+
+.monthly-sales {
+  color: #F6A723;
+  border-radius: 50%; 
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFBEB;
+}
+
+
+
+.returns{
+  border: "1.5px solid #ED4F9D";
+  color:#ED4F9D ;
+  border-radius: "50%";
+  width: "40px";
+  height: "40px";
+  display: "flex";
+  align-items: "center";
+  justify-content: "center";
+  
+}
+.content h4 {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.value-row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between amount and percentage */
+}
+
+.content h3 {
+  font-size: 20px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.percentage {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.percentage.positive {
+  color: #28a745;
+}
+
+.percentage.negative {
+  color: #dc3545;
+}
+
