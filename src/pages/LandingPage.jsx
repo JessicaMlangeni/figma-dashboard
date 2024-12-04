@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import "./LandingPage.css";
 import facebookLogo from "./images/akar-icons_facebook-fill.png";
 import googleLogo from "./images/google.png";
